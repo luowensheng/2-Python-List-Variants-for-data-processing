@@ -2,7 +2,7 @@
 
 1. ## LazyList
 
-### The LazyList doesn't perform any operations until an item is requested. Instead, it stores the operations in list. It allows to perform multiple operations, similar to a functional programming style like Haskell.
+ The LazyList doesn't perform any operations until an item is requested. Instead, it stores the operations in list. It allows to perform multiple operations, similar to a functional programming style like Haskell.
 
 ```python
 
@@ -69,7 +69,7 @@ the final result is (2.25)
 
 2. ## Stream
 
-### Similar to Streams in java. It allows performing map, filter, reduce and foreach on a list.
+ Similar to Streams in java. It allows performing map, filter, reduce and foreach on a list.
 
 ```python 
 class Stream(list):

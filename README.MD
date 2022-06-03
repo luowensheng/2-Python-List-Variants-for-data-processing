@@ -34,13 +34,9 @@ class LazyList(list):
         
         raise NotImplementedError()
             
-    def collect(self, _filter=None):
-        
-        if _filter is None:
+    def collect(self):
             return LazyList(self[:])
-        
-        else:
-            return LazyList(self[:])
+            
 ```
 ### Usage 
 

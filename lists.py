@@ -21,7 +21,7 @@ class Stream(list):
         return Stream(filter(func, iter(self))) 
     
     def foreach(self, func):
-        for item in map(func, iter(self)): item
+        for item in map(func, iter(self)): z
     
 
 class LazyList(list):
@@ -52,10 +52,5 @@ class LazyList(list):
         
         raise NotImplementedError()
             
-    def collect(self, _filter=None):
-        
-        if _filter is None:
-            return LazyList(self[:])
-        
-        else:
+    def collect(self):
             return LazyList(self[:])
